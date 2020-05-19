@@ -1,0 +1,11 @@
+<Project>
+    <Import Project="version.props" />
+    <PropertyGroup>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Authors>pauldotknopf</Authors>
+        <PackageDescription>Common types to make exposing events via services a bit more friendly.</PackageDescription>
+        <Summary>Common types to make exposing events via services a bit more friendly.</Summary>
+        <RepositoryUrl>https://github.com/pauldotknopf/sharp-events</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/pauldotknopf/sharp-events</PackageProjectUrl>
+    </PropertyGroup>
+</Project>
