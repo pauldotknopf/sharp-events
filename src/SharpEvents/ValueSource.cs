@@ -7,7 +7,7 @@ namespace SharpEvents
         private T _value;
         private readonly EventAggregator<T> _valueChanged;
 
-        public ValueSource(SharpEventDispatcherDel dispatcher)
+        public ValueSource(SharpEventDispatcherDel dispatcher = null)
         {
             _valueChanged = new EventAggregator<T>(dispatcher);
         }
