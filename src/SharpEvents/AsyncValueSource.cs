@@ -8,7 +8,7 @@ namespace SharpEvents
         private T _value;
         private readonly AsyncEventAggregator<T> _valueChanged;
 
-        public AsyncValueSource(SharpEventDispatcherAsyncDel dispatcher)
+        public AsyncValueSource(SharpEventDispatcherAsyncDel dispatcher = null)
         {
             _valueChanged = new AsyncEventAggregator<T>(dispatcher);
         }
