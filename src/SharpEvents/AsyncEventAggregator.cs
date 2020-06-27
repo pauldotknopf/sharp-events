@@ -24,9 +24,9 @@ namespace SharpEvents
         {
             if (_dispatcher != null)
             {
-                await _dispatcher(() =>
+                await _dispatcher(async () =>
                 {
-                    _eventSource.RaiseAsync(sender, args);
+                    await _eventSource.RaiseAsync(sender, args);
                 });
             }
             else

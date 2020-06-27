@@ -5,5 +5,5 @@ namespace SharpEvents
 {
     public delegate void SharpEventDispatcherDel(Action action);
     
-    public delegate Task SharpEventDispatcherAsyncDel(Action action);
+    public delegate Task SharpEventDispatcherAsyncDel(Func<Task> action);
 }
