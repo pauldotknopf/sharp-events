@@ -33,7 +33,7 @@ namespace WeakEvent
             var validHandlers = GetValidHandlers(_handlers);
             foreach (var handler in validHandlers)
             {
-                await handler.Invoke(sender, args).ConfigureAwait(false);
+                await handler.Invoke(sender, args);
             }
         }
 
